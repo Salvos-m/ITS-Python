@@ -30,3 +30,4 @@ while len(oggetti) <3:
 
     match oggetti:
         case ["penna", "matita", "quaderno"]
+        
