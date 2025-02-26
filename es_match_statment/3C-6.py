@@ -43,3 +43,28 @@ Output:
 Leone appartiene alla categoria dei Mammiferi!
 L'animale leone è uno dei mammiferi che può vivere sulla terra!
 '''
+
+
+'''
+mammiferi=["cane", "gatto", "cavallo", "elefante", "leone"]
+rettili= ["serpente", "lucertola", "tartaruga", "coccodrillo"]
+uccelli= ["aquila", "pappagallo", "gufo", "falco"]
+pesci= ["squalo", "trota", "salmone", "carpa"]
+tutti=[mammiferi,rettili,uccelli,pesci]
+
+animale=input("inserisci un animale:")
+
+match animale:
+    case animale if animale in mammiferi:
+        print(f"{animale} appartiene alla categoria dei mammiferi")
+    case animale if animale in rettili:
+        print(f"{animale} appartiene alla categoria dei rettili")
+    case animale if animale in uccelli:
+        print(f"{animale} appartiene alla categoria dei ucceli")
+    case animale if animale in pesci:
+        print(f"{animale} appartiene alla categoria dei pesci")
+    case animale if animale not in tutti:
+        print(f"{animale} non appartiene a nessuna delle categorie")
+'''
+
+
