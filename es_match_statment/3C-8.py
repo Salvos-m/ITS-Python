@@ -15,3 +15,15 @@ Output: Tu dici "di essere bellissimo"
 frase: ho vinto!
 Output: Wow!
 '''
+frase=input("inserisci una frase: ")
+
+match frase:
+    case farse if frase[-1]=="!":
+        print("wow")
+    case farse if len(frase)%2!=0 and frase[-1]=="?":
+        print("no")
+    case farse if len(frase)%2==0 and frase[-1]=="?":
+        print("si")
+    case _:
+        print(f"Tu dici:{frase}")
+        

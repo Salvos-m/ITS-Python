@@ -1,3 +1,4 @@
+#sbagliato non capisco dove
 '''
 Si scriva un programma in python che computi la statistica di otto 
  lanci di una moneta.
@@ -31,4 +32,40 @@ Totale "croce": 3
 Percentuale "croce": 37.50%
 '''
 
+print("Per ciascun lancio della moneta inserisci \"t\" o \"T\" se e' uscito \"testa\"")
+print("mentre inserisci \"c\" o \"C\" se e' uscito \"croce\".")
+
+counter=1
+croce=0
+testa=0
+tiri=0
+
+while counter<=8:
+    lancio=input(f"Lancio {counter}: ")
+    #counter+=1
+
+    match lancio:
+      case lancio if lancio== "c" or "C":
+          croce+=1
+          tiri+=1
+          counter+=1
+      case lancio if lancio== "t" or "T":
+          testa+=1
+          tiri+=1
+          counter+=1
+'''case lancio if lancio!="C" or "c" or "T" or "t":
+           counter+=0'''
+
+croce=croce
+testa=testa
+tiri=tiri
+#print(f"{testa} e {croce}")
+croceperc=(croce/tiri)*100
+testaperc=(testa/tiri)*100
+
+print(f"totale \"testa\":{testa}")
+print(f"percentuale \"testa\":{testaperc}%")
+
+print(f"totale \"croce\":{croce}")
+print(f"percentuale \"croce\":{croceperc}%")
 
