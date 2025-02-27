@@ -60,8 +60,8 @@ croceperc=(croce/8)*100
 testaperc=(testa/8)*100
 
 print(f"totale \"testa\":{testa}")
-print(f"percentuale \"testa\":{testaperc}%")
+print(f"percentuale \"testa\":{testaperc:.2f}%")
 
 print(f"totale \"croce\":{croce}")
-print(f"percentuale \"croce\":{croceperc}%")
+print(f"percentuale \"croce\":{croceperc:.2f}%")
 
