@@ -38,30 +38,26 @@ print("mentre inserisci \"c\" o \"C\" se e' uscito \"croce\".")
 counter=1
 croce=0
 testa=0
-tiri=0
 
 while counter<=8:
     lancio=input(f"Lancio {counter}: ")
     #counter+=1
 
     match lancio:
-      case lancio if lancio== "c" or "C":
+      case "c" | "C":
           croce+=1
-          tiri+=1
+          
           counter+=1
       case lancio if lancio== "t" or "T":
           testa+=1
-          tiri+=1
+        
           counter+=1
 '''case lancio if lancio!="C" or "c" or "T" or "t":
            counter+=0'''
 
-croce=croce
-testa=testa
-tiri=tiri
 #print(f"{testa} e {croce}")
-croceperc=(croce/tiri)*100
-testaperc=(testa/tiri)*100
+croceperc=(croce/8)*100
+testaperc=(testa/8)*100
 
 print(f"totale \"testa\":{testa}")
 print(f"percentuale \"testa\":{testaperc}%")

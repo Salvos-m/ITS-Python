@@ -29,3 +29,25 @@ Inserisci la coordinata X: 4
 Inserisci la coordinata Y: 0
 Output: Il punto (4,0) si trova sull'asse X.
 '''
+
+x=int(input("inserisci la coordinata x: "))
+y=int(input("inserisci la coordinata y: "))
+
+coordinate:tuple=(x,y)
+
+match coordinate:
+    case coordinate if coordinate ==(0,0):
+        print("Il punto si trova nell'origine.")
+    case coordinate if y==0:
+        print("Il punto si trova sull'asse X.")
+    case coordinate if x==0:
+        print("Il punto si trova sull'asse Y.")
+    case coordinate if x > 0 and y > 0:
+        print("Il punto si trova nel primo quadrante.")
+    case coordinate if x < 0 and y > 0:
+        print("Il punto si trova nel secondo quadrante.")
+    case coordinate if x < 0 and y < 0:
+        print("Il punto si trova nel terzo quadrante.")
+    case coordinate if x > 0 and y < 0:
+        print("Il punto si trova nel quarto quadrante.")
+

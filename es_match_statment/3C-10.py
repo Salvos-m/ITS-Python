@@ -24,3 +24,31 @@ Inserisci il giorno: 5
 Inserisci il mese: 3
 Output: Nessuna festività importante in questa data.
 '''
+
+giorno=int(input("inserisci il giorno: "))
+mese=int(input("inserisci il mese: "))
+
+data:tuple=(giorno,mese)
+
+capodanno:tuple=(1,1)
+san_valentino:tuple=(14,2)
+ferragosto:tuple=(15,8) 
+halloween:tuple=(31,10)
+natale:tuple= (25,12)
+lista:list=[capodanno,san_valentino,ferragosto,halloween,natale]
+
+match data:
+    case data if data == capodanno:
+        print("il 1/1 e' capodanno")
+    case data if data==san_valentino:
+        print("il 14/12 e' San Valentino")
+    case data if data==ferragosto:
+        print("il 15/8 e' Ferragosto")
+    case data if data ==halloween:
+        print("il 31/10 e' Halloween")
+    case data if data==natale:
+        print("il 25/12 e' Natale")
+    case data if mese==7:
+        print("Festa della Repubblica Italiana")
+    case data if data!=lista:
+        print("Nessuna festività importante in questa data.")
