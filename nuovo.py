@@ -8,5 +8,10 @@ dizionario={"ladro":"marco",
             }
 
 hello=["he","llo"]
-del hello
 print(hello)
+
+import keyword
+print(keyword.kwlist)
+
+import math
+print(math)
