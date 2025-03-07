@@ -8,6 +8,6 @@ while True:
       count+=1
     elif numero<0:
        count+=1
-    if 
+    
 
 print(sum)
