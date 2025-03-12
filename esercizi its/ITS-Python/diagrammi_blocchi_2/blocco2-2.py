@@ -1,5 +1,6 @@
-nord_sud=int(input("numero veicoli: "))
-est_ovest=int(input("numero veicoli: "))
+nord_sud=int(input("numero  veicoli n-s: "))
+est_ovest=int(input("numero  veicoli e_o: "))
+time_nse_otime_eo=0
 
 soglia=70
 
@@ -16,8 +17,8 @@ elif est_ovest>soglia:
     time_eo=60
 
 else:
-    ime_ns=(nord_sud/(nord_sud+est_ovest))*100
+    time_ns=(nord_sud/(nord_sud+est_ovest))*100
     time_eo=(est_ovest/(nord_sud+est_ovest))*100
 
-print("il tempo assegnato alla direzione nord-sud è" + time_ns)
-print("il tempo assegnato alla direzione est_ovest è" + time_eo)
+print(f"il tempo assegnato alla direzione nord-sud è {time_ns}" )
+print(f"il tempo assegnato alla direzione est_ovest è {time_eo}")
