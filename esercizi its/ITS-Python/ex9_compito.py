@@ -18,3 +18,12 @@ Quindi:
 
 Nota: Il programma deve iterare fino a raggiungere ciascuna delle soglie indicate, 
 contando il numero di termini necessari.'''
+
+def city_country(**kwargs):
+  
+  while True:
+      
+    for k,v in kwargs.items():
+        return f"{k},{v}"
+
+print(city_country(roma="italy", porto="Portugal"))

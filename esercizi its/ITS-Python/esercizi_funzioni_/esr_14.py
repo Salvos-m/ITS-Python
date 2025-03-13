@@ -8,7 +8,7 @@ car = make_car('subaru', 'outback', color='blue', tow_package=True) Print the di
 that’s returned to make sure all the information was stored correctly. 
 '''
 
-car=""
 
-def car_funz():
-    
+def make_car(marca:str,modello:str,**kwargs):
+
+    return 
