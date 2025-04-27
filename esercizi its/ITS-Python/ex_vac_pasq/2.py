@@ -101,25 +101,89 @@ rimossi come valori
 
 
 
-'''
-Scrivi una funzione che accetti un dizionario di prodotti con i prezzi e 
-restituisca un nuovo dizionario con solo i prodotti che hanno un prezzo 
-superiore a 20, ma scontati del 10%.
-'''
+# '''
+# Scrivi una funzione che accetti un dizionario di prodotti con i prezzi e 
+# restituisca un nuovo dizionario con solo i prodotti che hanno un prezzo 
+# superiore a 20, ma scontati del 10%.
+# '''
 
-def filtra_e_mappa(prodotti: dict[str:float]) -> dict[str:float]:
-    counter=0
-    lung=len(prodotti)
-    print(lung)
+# def filtra_e_mappa(prodotti: dict[str:float]) -> dict[str:float]:
+#     counter=0
+#     lung=len(prodotti)
+#     print(lung)
     
-    while counter<lung:
-        for keys,values in prodotti.items():
+#     while counter<lung:
+#         for keys,values in prodotti.items():
         
-            if values>20:
-                counter+=1
-        return values
+#             if values>20:
+#                 counter+=1
+#         return values
+
+
+# def filtra_e_mappa(prodotti: dict[str:float]) -> dict[str:float]:
+#     counter=0
+#     lung=len(prodotti)
+#     prod_scont:dict={}
+    
+
+#     while counter<lung:
+
+#         for keys,values in prodotti.items():
+#             if values>20:
+#                 counter+=1
+#                 prod_scont[keys]=values
+           
+    
+#     for keys,values in prod_scont.items():
+#         scontato=values-(values*10/100)
+#         prod_scont[keys]=scontato
+#     return prod_scont   
+
+# print(filtra_e_mappa({'Penna': 15.0, 'Zaino': 50.0, 'Quaderno': 22.0}))
 
 
 
 
-print(filtra_e_mappa({'Penna': 15.0, 'Zaino': 50.0, 'Quaderno': 22.0}))
+
+
+    
+# def filtra_e_mappa(prodotti: dict[str:float]) -> dict[str:float]:
+#     counter=0
+#     lung=len(prodotti)
+#     prod_scont:dict={}
+#     contenitore=0
+    
+
+#     while counter<lung:
+
+#         for keys,values in prodotti.items():
+#             if values>20:
+#                 counter+=1
+#                 prod_scont[keys]=values
+#             else:
+#                 contenitore+=1
+#                 if contenitore==lung:
+#                     prodotti.clear()
+#                     return prodotti
+
+            
+    
+#     for keys,values in prod_scont.items():
+#         scontato=values-(values*10/100)
+#         prod_scont[keys]=scontato
+#     return prod_scont   
+
+
+'''
+
+PARTE 1
+Scrivi una funzione chiamata create_contact() che accetta il nome e cognome, 
+e-mail (facoltativo) e numero di telefono (facoltativo). La funzione dovrebbe 
+restituire un dizionario con i dettagli del contatto.
+ 
+PARTE 2
+Scrivi una funzione chiamata update_contact() che accetta il dizionario creato, 
+il nome e cognome del contatto da aggiornare, e il dettaglio facoltativo da 
+aggiornare. Questa funzione dovrebbe aggiornare il dizionario del contatto.
+
+'''
